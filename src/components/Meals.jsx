@@ -8,7 +8,6 @@ export default function Meals() {
   useEffect(() => {
     async function fetchMeals() {
       const response = await axios.get("http://localhost:3000/meals");
-      console.log(response.data);
       if (response.status === 200) {
         console.log("OK response");
       }
